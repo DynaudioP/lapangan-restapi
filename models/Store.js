@@ -20,7 +20,7 @@ const StoreSchema = new mongoose.Schema({
     tipeBarang: {
         type: String,
         required: true,
-        enum: ['Sepatu', 'Baju', 'Bola', 'Lainnya'], 
+        enum: ['Sepatu', 'Baju', 'Bola', 'Lainnya'],
     },
     namaToko: {
         type: String,
@@ -29,7 +29,9 @@ const StoreSchema = new mongoose.Schema({
     gambar: {
         type: String,
         required: true,
-    }
+    },
+    kota: { type: String, required: true },
+    alamat: { type: String, required: true },
 }, {
     timestamps: true,
 });

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const LapanganSchema = new mongoose.Schema({
   nama: { type: String, required: true },
   alamat: { type: String, required: true },
+  kota: { type: String, required: true },
   harga: [
     {
       pagi: Number,
