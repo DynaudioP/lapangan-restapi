@@ -20,7 +20,11 @@ const LapanganSchema = new mongoose.Schema({
   gambar: {
     type: String,
     required: true,
-  }
+  },
+  gambarBg: {
+    type: String,
+    required: true
+  },
   
 }, { timestamps: true });
 
