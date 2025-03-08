@@ -16,6 +16,11 @@ const LapanganSchema = new mongoose.Schema({
       tutup: String,
     }
   ],
+  gambar: {
+    type: String,
+    required: true,
+  }
+  
 }, { timestamps: true });
 
 module.exports = mongoose.model('Lapangan', LapanganSchema);
