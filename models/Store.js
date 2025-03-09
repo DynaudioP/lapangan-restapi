@@ -34,6 +34,10 @@ const StoreSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    gambarItem: {
+        type: String,
+        required: true
+    },
     kota: { type: String, required: true },
     alamat: { type: String, required: true },
 }, {
